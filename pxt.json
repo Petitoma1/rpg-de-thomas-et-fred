@@ -1,5 +1,5 @@
 {
-    "name": "Jeux de Thomas et fred",
+    "name": "Jeu de Thomas et fred",
     "description": "",
     "dependencies": {
         "device": "*"
