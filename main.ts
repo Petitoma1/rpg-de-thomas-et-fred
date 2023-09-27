@@ -1,4 +1,6 @@
-let mySprite = sprites.create(img`
+let mySprite: Sprite = null
+mySprite.setVelocity(50, 50)
+mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
     . . . f f f 2 2 2 2 f f f . . . 
@@ -17,3 +19,6 @@ let mySprite = sprites.create(img`
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`niveau1`)
+game.onUpdate(function () {
+    controller.moveSprite(mySprite)
+})
